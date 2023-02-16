@@ -1,0 +1,25 @@
+.card__article {
+    display: flex;
+    height: 340px;
+    width: 340px;
+    border-radius: 10px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+}
+
+.card__img {
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(65%);
+}
+
+.card__text {
+    position: absolute;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    bottom: 3%;
+    margin: 0 0 0 2%;
+}
+

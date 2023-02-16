@@ -1,19 +1,28 @@
-function App() {
+import React from 'react'
+import { Link } from 'react-router-dom'
+
+import '../styles/Home.css'
+
+import Banner from '../components/Banner'
+import Card from '../components/Cards'
+
+import data from '../data/logements.json'
+
+function Home() {
     return (
-        <div className="App">
-            <header className="App-header">
-                <p>react</p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Kasa
-                </a>
-            </header>
-        </div>
-    );
+        <main>
+            <Banner />
+            <section className="card-container">
+                {data.map((product) => {
+                    return (
+                        <Link className='card__link' key={product.id} to={`/products/${product.id}`}>
+                            <Card cover={product.cover} title={product.title} />
+                        </Link>
+                    )
+                })}
+            </section>
+        </main>
+    )
 }
 
-export default App;
+export default Home

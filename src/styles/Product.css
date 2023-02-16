@@ -1,0 +1,30 @@
+.product__info {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.product__title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #ff6060
+}
+
+.product__location {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ff6060;
+}
+
+.host-container {
+    display: flex;
+    align-items: center;
+}
+
+.host__picture {
+    border-radius: 50%;
+    height: 65px;
+    width: 65px;
+    margin-left: 15px;
+}
