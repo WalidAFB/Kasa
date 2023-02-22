@@ -1,3 +1,8 @@
+.home-container {
+    width: 90%;
+    margin: auto;
+}
+
 .card-container {
     display: flex;
     justify-content: center;
@@ -9,7 +14,7 @@
 }
 
 .card__link {
-    margin: 2% 4%;
+    margin: 2% 3%;
 }
 
 .card__link:link {

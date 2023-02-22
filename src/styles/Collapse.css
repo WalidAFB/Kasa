@@ -1,0 +1,64 @@
+.collapse__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+    color: #fff;
+    background-color: #ff6060;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.collapse-container > .collapse__title {
+    list-style: none;
+}
+
+.collapse__title::after {
+    content: url(../assets/arrow_down.svg);
+}
+.collapse-container[open] .collapse__title:after {
+    content: url(../assets/arrow_up.svg);
+}
+
+.collapse__content {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 35px 15px 35px 15px;
+    border-radius: 0 0 10px 10px;
+}
+
+.collapse__text {
+    margin: 0;
+}
+
+.collapse__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+/* Collapse properties for About page */
+
+.collapse-about .collapse-container {
+    margin: 2% auto;
+    width: 80%;
+    font-size: 24px;
+}
+
+.collapse-about .collapse__title {
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.collapse-about .collapse__content {
+    background-color: #f6f6f6;
+    color: #ff6060;
+    font-weight: 400;
+    padding: 25px 10px 15px 10px;
+    border-radius: 0 0 10px 10px;
+}
