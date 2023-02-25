@@ -2,6 +2,7 @@ import React from 'react'
 
 import '../styles/Rating.css'
 
+// Import des données
 import greyStar from '../assets/star_grey.svg'
 import orangeStar from '../assets/star_orange.svg'
 
@@ -16,5 +17,6 @@ function Rating({ rate }) {
 
     return <div className="rating-container">{stars}</div>
 }
+
 
 export default Rating

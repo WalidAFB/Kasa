@@ -1,40 +1,52 @@
 .product-container {
-    width: 90%;
-    margin: auto;
+    width: 86%;
+    margin: 15px auto 0;
 }
 
 .product__info {
+    margin: 20px 0;
     display: flex;
     justify-content: space-between;
 }
 
 .product__title {
+    margin: 0;
+    color: #ff6060;
     font-size: 36px;
     font-weight: 500;
-    color: #ff6060;
 }
 
 .product__location {
+    margin: 10px 0 15px 0;
+    color: #ff6060;
     font-size: 18px;
     font-weight: 500;
-    color: #ff6060;
 }
 
 .host-container {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
+    align-items: flex-end;
 }
 
 .host__info {
+    width: 160px;
     display: flex;
 }
 
+.host__name {
+    color: #ff6060;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: right;
+}
+
 .host__picture {
-    border-radius: 50%;
     height: 65px;
     width: 65px;
     margin-left: 15px;
+    border-radius: 50%;
 }
 
 .collapse-product {
@@ -44,4 +56,108 @@
 
 .collapse-product .collapse-container {
     width: 48%;
+}
+
+/* Small screen */
+
+@media only screen and (max-width: 1025px) {
+    .product__title {
+        font-size: 32px;
+    }
+
+    .product__location {
+        font-size: 17px;
+    }
+
+    .host__name {
+        font-size: 16px;
+    }
+
+    .host__picture {
+        height: 55px;
+        width: 55px;
+        margin-left: 12px;
+        border-radius: 50%;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 769px) {
+    .product-container {
+        width: 89%;
+    }
+
+    .product__info {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    .product__title {
+        font-size: 24px;
+    }
+
+    .product__location {
+        font-size: 16px;
+    }
+
+    .host-container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .host__info {
+        width: 130px;
+        align-items: center;
+    }
+
+    .host__name {
+        font-size: 16px;
+    }
+
+    .host__picture {
+        height: 45px;
+        width: 45px;
+        margin-left: 9px;
+    }
+
+    .collapse-product {
+        flex-direction: column;
+    }
+
+    .collapse-product .collapse-container {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+/* Smartphone */
+
+@media only screen and (max-width: 480px) {
+    .product__info {
+        margin: 10px 0;
+    }
+
+    .product__title {
+        font-size: 18px;
+    }
+
+    .product__location {
+        font-size: 14px;
+    }
+
+    .host__info {
+        width: 115px;
+    }
+
+    .host__name {
+        font-size: 12px;
+    }
+
+    .host__picture {
+        height: 32px;
+        width: 32px;
+        margin-left: 7px;
+    }
 }

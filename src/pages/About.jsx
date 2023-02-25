@@ -1,8 +1,11 @@
 import React from 'react'
+
+import '../styles/About.css'
+
 import Banner from '../components/Banner'
 import Collapse from '../components/Collapse'
 import bannerAbout from '../assets/banner_about.png'
-import '../styles/About.css'
+
 
 function About() {
     return (

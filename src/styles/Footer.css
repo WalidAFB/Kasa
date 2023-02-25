@@ -1,12 +1,40 @@
 .footer {
-    text-align: center;
-    background-color: #000;
-    padding: 50px 0 20px 0;
     margin-top: 30px;
+    padding: 50px 0 20px 0;
+    background-color: #000;
+    text-align: center;
 }
 
 .footer__text {
+    color: #fff;
     font-size: 24px;
     font-weight: 500;
-    color: #fff;
+}
+
+/* Small screen */
+
+@media only screen and (max-width: 1025px) {
+    .footer__text {
+        font-size: 20px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 769px) {
+    .footer {
+        padding: 30px 0 20px;
+    }
+
+    .footer__text {
+        font-size: 16px;
+    }
+}
+
+/* Smartphone  */
+
+@media only screen and (max-width: 480px) {
+    .footer__text {
+        font-size: 12px;
+    }
 }

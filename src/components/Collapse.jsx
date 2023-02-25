@@ -1,4 +1,5 @@
 import React from 'react'
+
 import '../styles/Collapse.css'
 
 function Collapse({ content, title }) {

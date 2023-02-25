@@ -1,0 +1,23 @@
+/* Small screen */
+@media only screen and (max-width: 1025px) {
+    .rating-container {
+        display: flex;
+        height: 25px;
+    }
+}
+
+/* Tablet */
+
+@media only screen and (max-width: 769px) {
+    .rating-container {
+        height: 20px;
+    }
+}
+
+/* Smartphone */
+
+@media only screen and (max-width: 480px) {
+    .rating-container {
+        height: 15px;
+    }
+}

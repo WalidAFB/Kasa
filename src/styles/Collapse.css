@@ -1,19 +1,14 @@
 .collapse__title {
+    height: 52px;
+    padding: 0 3%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 40px;
-    color: #fff;
     background-color: #ff6060;
     border-radius: 10px;
+    color: #fff;
     font-size: 18px;
     font-weight: 500;
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.collapse-container > .collapse__title {
-    list-style: none;
 }
 
 .collapse__title::after {
@@ -24,12 +19,12 @@
 }
 
 .collapse__content {
+    padding: 30px 15px 35px;
     background-color: #f6f6f6;
+    border-radius: 0 0 10px 10px;
     color: #ff6060;
     font-size: 18px;
     font-weight: 400;
-    padding: 35px 15px 35px 15px;
-    border-radius: 0 0 10px 10px;
 }
 
 .collapse__text {
@@ -42,23 +37,52 @@
     list-style-type: none;
 }
 
-/* Collapse properties for About page */
+/* Small screen */
 
-.collapse-about .collapse-container {
-    margin: 2% auto;
-    width: 80%;
-    font-size: 24px;
+@media only screen and (max-width: 1025px) {
+    .collapse__title {
+        height: 46px;
+        font-size: 17px;
+    }
+
+    .collapse__content {
+        padding: 25px 15px 30px;
+        font-size: 16px;
+    }
 }
 
-.collapse-about .collapse__title {
-    font-weight: 500;
-    border-radius: 5px;
+/* Tablet */
+
+@media only screen and (max-width: 769px) {
+    .collapse__title {
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .collapse__content {
+        padding: 15px 10px 5px 10px;
+        font-size: 14px;
+    }
 }
 
-.collapse-about .collapse__content {
-    background-color: #f6f6f6;
-    color: #ff6060;
-    font-weight: 400;
-    padding: 25px 10px 15px 10px;
-    border-radius: 0 0 10px 10px;
+/* Smartphone properties  */
+
+@media only screen and (max-width: 480px) {
+    .collapse__title {
+        height: 30px;
+        font-size: 13px;
+    }
+
+    .collapse__content {
+        padding: 15px 10px 5px 10px;
+        font-size: 12px;
+    }
+
+    .collapse__title::after {
+        content: url(../assets/arrow_down_small.svg);
+    }
+
+    .collapse-container[open] .collapse__title:after {
+        content: url(../assets/arrow_up_small.svg);
+    }
 }
